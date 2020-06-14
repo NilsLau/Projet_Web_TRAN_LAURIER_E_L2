@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+   	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="mathematques.css" />
+		<title>Study.fr Physique </title>
+	</head> 
+	<body>
+	
+		<header>
+			<h1><a class = "nom" href = "projet_web.html ">Study.fr</a></h1>
+			<nav>
+				<a class = "page" href="mathematiques.html">Mathématiques</a>
+				<a class = "page" href="physique.html">Physique</a>
+				<a class = "page" href="informatique.html">Informatique</a>
+				<a class = "page" href="avis.html">A vous de jouer</a>
+			</nav>
+		</header>
+		
+		<div class = "cours">
+			<p>
+				<h1 class = "matiere">Physique</h1>
+					<h2>1. Introduction</h2>
+					La plupart des objets étudiés par les physiciens sont en mouvement : depuis les particules
+					élémentaires telles que les électrons, les protons et les neutrons qui constituent les atomes,
+					jusqu’aux galaxies, en passant par les objets usuels et les corps célestes. On ne peut espérer bien
+					comprendre comment fonctionne la nature que si l’on est capable de définir clairement le
+					mouvement et de le mesurer. La branche de la physique qui étudie les mouvements s’appelle la
+					mécanique.</br></br>
+					L’étude de la mécanique se subdivise en cinématique et dynamique. La cinématique
+					consiste à décrire la manière dont un corps se déplace dans l’espace en fonction du temps sans
+					s’attacher aux causes qui produisent ce mouvement. La dynamique, par contre, s’intéresse à ces
+					causes : les forces. Elle relie les forces au mouvement.</br></br>
+					Nous limiterons notre étude de la mécanique à l’étude du mouvement des points
+					matériels. Par définition un point matériel est un objet sans dimensions spatiales. Bien entendu,
+					dans la plupart des cas, il s’agit d’une simplification, les objets réels occupant généralement un
+					certain espace. Néanmoins, ce concept est utile dans bon nombre de situations réelles où on ne
+					s’intéresse pas aux rotations de l’objet sur lui-même ou lorsque les dimensions de l’objet peuvent
+					être négligées. C’est notamment le cas des charges électriques en mouvement dans un circuit
+					électrique.</br></br>
+					On appelle trajectoire d’un mobile l’ensemble des positions successives qu’il occupe au
+					cours du temps.
+					<h2>2. Cinématique à plusieurs dimensions</h2>
+					<h3>2.1. Repérage du mobile</h3>
+					Dans le cas d’une trajectoire quelconque dans l’espace à 3 dimensions ou dans un plan, la
+					position du mobile est entièrement déterminée par son vecteur position à chaque instant
+					t : r(t) .
+					r(t) = OP(t)</br></br>
+					Ceci implique le choix d’une origine O. Dans un référentiel Oxyz, le vecteur position peut
+					s’exprimer en fonction de ses coordonnées cartésiennes : x, y, et z.</br></br>
+					x = OPx y = OPy z = OPz
+					où Px, Py et Pz sont respectivement les projections du point P sur les axes Ox, Oy et Oz.</br></br>
+					Le vecteur position r s’écrit en fonction de ses coordonnées :
+					r = x 1x + y 1y + z 1z (I.12)
+					où 1 , 1 et 1 sont des vecteurs de longueur unité dirigés suivant les axes Ox, Oy et Oz.
+					x y z
+					<h3>2.2. La vitesse instantanée</h3>
+					Tout naturellement, on généralise la notion de vitesse instantanée vue dans le cas à une
+					dimension, de la manière suivante :</br></br>
+					v(t) ≡ lim ∆r =dr(t)</br></br>
+					∆ t →0 ∆t dt</br></br>
+					où ∆r ≡ r(t +∆ t) − r(t) est le vecteur déplacement entre les instants t et t + ∆t.
+					v ≡ dr (I.13)
+					dt
+					</br></br>La vitesse instantanée est donc un vecteur qui est la dérivée du vecteur position par rapport au
+					temps.
+					</br></br>
+					Le vecteur v peut s’écrire en fonction de ses coordonnées dans le référentiel Oxyz, soit vx,
+					v = v x 1x + v y 1y + v z 1z
+					D’après (I.12) et (I.13), nous avons :
+					v =
+					d
+					dt x 1x + y 1y + z
+					1
+					z
+					= dx 1 + dy 1 + dz 1
+					dt x dt y dt z
+					car les vecteurs unité 1x , 1y et 1z sont constants. Dès lors, en identifiant à
+					(I.14), il vient :
+					vx =
+					dxdt
+					vy =
+					d
+					dty
+					vz =
+					dzdt
+					</br></br>
+					A la limite où ∆t tend vers zéro, le vecteur ∆r tend vers un vecteur tangent à la trajectoire (voir
+					figure I.7). Le vecteur vitesse est donc toujours tangent à la trajectoire. On peut donc l’écrire :
+					v = v 1t (I.16)
+					où 1t est un vecteur unité tangent à la trajectoire au point considéré, v est le module du vecteur v .
+					</br></br>Il est donc donné par :
+					v = v
+					2
+					x + v
+					2
+					y + v
+					2
+					z
+					<h3>I.2.3 : L’accélération instantanée</h3>
+					L’accélération instantanée s’obtient de manière analogue :
+					a(t) ≡ lim ∆v =dv ,
+					∆ t →0 ∆t dt
+					où ∆ v ≡ v(t +∆t) − v(t) est la variation de vitesse entre les instants t et t + ∆t.
+					a ≡
+					dv
+					dt</br></br>
+					L’accélération instantanée est donc un vecteur qui est la dérivée par rapport au temps du vecteur
+					vitesse. Le vecteur a peut s’écrire en fonction de ses coordonnées dans le référentiel Oxyz, soit ax,
+					ay et az :
+					a = ax x
+					+ a
+					y y
+					+ a
+					z 1 1 1z </br></br>
+					D’après (I.14) et (I.17), nous avons :
+					d
+					a = dt 1x + v y 1y + v z
+					v
+					x
+					1
+					z
+					= dv x +
+					dvy +
+					dv
+					1 1 z 1
+					dt x dt y dt z</br></br>
+					En comparant à (I.18) et en tenant compte de (I.15), on obtient :
+					</br></br>
+					ax = dvx = d
+					2
+					x
+					dt dt2
+					ay =
+					dvy
+					=
+					d
+					2
+					y
+					dt dt 2
+					az = dvz = d
+					2
+					z
+					dt dt2
+					</br></br>Pour voir quelle est la direction du vecteur accélération, il faut dériver l’expression (I.16) :
+					a = d v 1
+					dt t
+					dv
+					d1t
+					= dt 1t + v dt
+					</br></br>En effet, le vecteur unité 1t n’est pas constant. Lorsque le mobile se déplace le long de sa
+					trajectoire, le vecteur 1t , toujours tangent à la trajectoire, change de direction, sauf si la trajectoire
+					est rectiligne, auquel cas ce deuxième terme s’annule et l’accélération est elle aussi tangente à la
+					trajectoire. On peut montrer que dans le cas général, le deuxième terme de l’expression ci-dessus
+					est normal à la trajectoire :</br></br>
+					a = a t 1t + a n 1n (I.21)
+					où l’accélération tangentielle, at =
+					dvdt , est due à la variation du module du vecteur vitesse et
+					l’accélération normale an est due au changement de direction de v , autrement dit à la courbure de
+					la trajectoire ; le vecteur 1n est un vecteur unité perpendiculaire à la trajectoire (voir figure I.8).
+					<h3>I.2.4 : Cas particulier du mouvement circulaire uniforme (MCU)</h3>
+					Supposons un mobile qui décrit une trajectoire circulaire dans le plan Oxy ; la circonférence
+					a un rayon R et est centrée sur l’origine des axes O. Dans ce cas il est plus commode de travailler
+					avec des coordonnées polaires ρ et ϕ, plutôt qu’avec des coordonnées cartésiennes.</br>
+					La coordonnée radiale ρ est la distance du point P à l’origine O et ϕ est l’angle azimutal. Il se
+					mesure depuis l’axe Ox, dans le sens trigonométrique (voir figure I.8). Dans le SI, les angles sont
+					mesurés en radian (rad). Cette unité est définie comme le rapport de l’arc de circonférence s,
+					intercepté par l’angle au centre ϕ, divisé par le rayon de la circonférence (voir figure I.9) :</br></br>
+					ϕ[ rad]≡
+					s
+					(I.22) R
+					d’où l’on déduit :
+					s = Rϕ, à condition que ϕ soit mesuré en radian.</br></br>
+					Le radian étant un rapport de deux longueurs, il n’a pas de dimensions.
+					Les relations entre cordonnées polaires et coordonnées cartésiennes peuvent être établies
+					aisément à partir des relations trigonométriques du triangle rectangle (voir figure I.8) :</br></br>
+					x = ρ cos ϕ</br></br>
+					y = ρ sin ϕ (I.23)</br></br>
+					Dans le cas d’une trajectoire circulaire de centre O, ρ = R est constant et la seule coordonnée
+					qui varie dans le temps est l’angle ϕ; c’est elle qui détermine la position du point P à tout instant.
+					Pour trouver l’expression de la vitesse dans un mouvement circulaire, faisons appel à la
+					définition de celle-ci (voir section I.3.2) :</br></br>
+					v = lim ∆r , ou en considérant seulement le module des vecteurs : v = lim ∆r .
+					∆t →0∆t ∆t →0 ∆t</br></br>
+					A la limite où ∆t → 0, la longueur de la corde ∆r tend vers la longueur de l’arc de circonférence
+					∆s, intercepté par l’angle ∆ ϕ (voir figure I.10).
+					P(t + ∆t)</br></br>
+					Donc : v = lim ∆s = lim R∆ϕ = R
+					dϕ
+					∆t → 0 ∆t ∆t →0 ∆t dt
+					Ceci nous amène à définir la vitesse angulaire ω comme la dérivée par rapport au temps de l’angle
+					azimutal :
+					ω≡ dϕ
+					(I.24)
+					dt
+					Nous pouvons donc écrire, pour tout mouvement circulaire :
+					v = Rω (I.25)</br></br>
+					Cette relation exprime que le module du vecteur vitesse est égal au rayon de la circonférence décrite
+					par le mobile, multiplié par la vitesse angulaire de celui-ci.
+					On dit que le mouvement circulaire est uniforme (MCU) lorsque la vitesse angulaire ω et
+					donc la vitesse v est constante. Le temps mis par le mobile pour effectuer un tour complet est
+					constant et est défini comme la période T du MCU.</br></br>
+					On a donc : T ≡
+					2π
+					v
+					R
+					et donc :
+					T =
+					2π
+					(I.26)
+					ω
+					</br></br>On appelle fréquence du mouvement, le nombre de révolutions effectuées par unité de temps. La
+					fréquence est donc l’inverse de la période :
+					f ≡
+					1
+					, (I.27) T
+					ou encore, à l’aide de (I.26) :
+					f =
+					ω (I.28)
+					2π
+					</br></br>L’unité de fréquence du SI est le hertz (Hz) ; elle est égale à l’inverse d’une seconde.
+					Bien que v soit constant l’accélération n’est pas nulle dans un MCU ; celle-ci est due au
+					changement d’orientation du vecteur v avec le temps et est donc normale (voir I.21). Pour trouver
+					l’expression de l’accélération dans un MCU, partons de sa définition (voir I.3.3) et considérons
+					uniquement son module :</br></br>
+					a = a n = lim
+					∆v
+					,
+					∆ t →0
+					∆t
+					Pour trouver ∆v, considérons le mobile aux instants t et t + ∆t (voir figure I.11.a) :
+					a) b)
+					R
+					Nous avons vu que pour tout mouvement, le vecteur vitesse est tangent à la trajectoire. Les
+					vecteurs vitesse v(t) et v(t +∆t) font donc entre eux un angle ∆ϕ, le mobile ayant tourné de cet
+					angle pendant le temps ∆t. Ayant même module, le mouvement étant uniforme, ils forment donc
+					avec ∆v un triangle isocèle (voir figure I.11.b) semblable à celui de la figure I.10. Dès lors :</br></br>
+					∆
+					v
+					v
+					=
+					∆
+					R
+					r
+					Et :
+					∆ v = v ∆r
+					∆ t R ∆t
+					Ce qui donne :</br></br>
+					a = a
+					n
+					= lim v ∆r = v v
+					∆ t →0 R ∆t R
+					Nous avons donc montré que dans un MCU, l’accélération vaut :
+					a =
+					v
+					2
+					= Rω
+					2
+					, pour le MCU (I.29)
+			</p>
+		</div>
+		<footer>	
+			<a class = "equipe" href = "equipe.html">Qui sommes-nous?</a>
+			<div class = "reseaux" />
+				<a href="https://www.facebook.com/damien.tran.98" target = "_blank"><img id = "fb" src = "facebook.png" alt = "facebook"/></a>
+				<a href="https://twitter.com/DaMiiEn_94" target = "_blank"><img id = "twitter"  src = "twitter.png" alt = "twitter"/></a>
+				<a href="https://www.instagram.com/damien_trn/?hl=fr" target = "_blank"><img id = "instagram" class = "logos" src = "instagram.png" alt = "instagram"/></a>
+			</div>
+			<small class = "credits">&copy; Copyright 2020, Damils Corporation</small>
+		</footer>
+		
+	</body>
+</html>

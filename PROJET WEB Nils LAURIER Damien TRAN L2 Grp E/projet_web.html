@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+   	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="projet_web_style.css" />
+		<title>Study.fr Accueil</title>
+	</head> 
+	<body>
+		<header>
+			<h1><a class = "nom" href = "projet_web.html ">Study.fr</a></h1>
+			<nav>
+				<a class = "page" href="mathematiques.html">Mathématiques</a>
+				<a class = "page" href="physique.html">Physique</a>
+				<a class = "page" href="informatique.html">Informatique</a>
+				<a class = "page" href="avis.html">à vous de jouer</a>
+			</nav>
+		</header>
+		
+		<div class = "accueil">
+			<p class = "intro">
+				<span class = "bvn">Bienvenue sur <span class = "marque"s>Study.fr</span> !</span></br></br> Sur ce site, vous pourrez trouver
+				toutes les informations pour réussir votre semestre 4 à l'Efrei Paris. Vous pouvez accèder
+				aux cours de mathématiques, de physique et d'informatique pour bien réviser les partiels. 
+				N'hésitez pas à laisser votre avis sur le site sur la page A vous de jouer.</br></br> Regardez
+				les vidéos ci-contre pour les rappels de cours des semestres précédents :
+			</p>
+			<div class = "caroussel">
+				<iframe id = "videos" width="355" height="200" src="https://www.youtube.com/embed/VNGFmMt1W3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class = "boutons">
+					<input id ="b1" type = "reset" value = "" onClick = "video1()"/>
+					<input id ="b2" type = "reset" value = "" onClick = "video2()"/>
+					<input id ="b3" type = "reset" value = "" onClick = "video3()"/>
+				</div>
+			</div>
+		</div>
+		
+		<footer>	
+			<a class = "equipe" href = "equipe.html">Qui sommes-nous?</a>
+			<div class = "reseaux" />
+				<a href="https://www.facebook.com/damien.tran.98" target = "_blank"><img id = "fb" src = "facebook.png" alt = "facebook"/></a>
+				<a href="https://twitter.com/DaMiiEn_94" target = "_blank"><img id = "twitter"  src = "twitter.png" alt = "twitter"/></a>
+				<a href="https://www.instagram.com/damien_trn/?hl=fr" target = "_blank"><img id = "instagram" class = "logos" src = "instagram.png" alt = "instagram"/></a>
+			</div>
+			<small class = "credits">&copy; Copyright 2020, Damils Corporation</small>
+		</footer>
+		
+		<script>
+		
+			document.getElementById("b1").style.backgroundColor = "rgb(0,255,170)";
+			setInterval(changer_video, 6000);
+			
+			function changer_video()
+			{
+				var video = document.getElementById("videos");
+				
+				if (video.src == "https://www.youtube.com/embed/VNGFmMt1W3Y"){
+					video.src = "https://www.youtube.com/embed/yuENW2onMFE";
+					document.getElementById("b1").style.backgroundColor = "white";
+					document.getElementById("b2").style.backgroundColor = "rgb(0,255,170)";
+				}
+				else if(video.src == "https://www.youtube.com/embed/yuENW2onMFE"){
+					video.src = "https://www.youtube.com/embed/1OKqjSFVMMI";
+					document.getElementById("b2").style.backgroundColor = "white";
+					document.getElementById("b3").style.backgroundColor = "rgb(0,255,170)";
+				}
+				else{
+					video.src = "https://www.youtube.com/embed/VNGFmMt1W3Y";
+					document.getElementById("b3").style.backgroundColor = "white";
+					document.getElementById("b1").style.backgroundColor = "rgb(0,255,170)";
+				}
+			}
+			
+			function video1()
+			{
+				var video = document.getElementById("videos");
+				video.src = "https://www.youtube.com/embed/VNGFmMt1W3Y";
+				document.getElementById("b3").style.backgroundColor = "white";
+				document.getElementById("b2").style.backgroundColor = "white";
+				document.getElementById("b1").style.backgroundColor = "rgb(0,255,170)";
+			}
+			
+			function video2()
+			{
+				var video = document.getElementById("videos");
+				video.src = "https://www.youtube.com/embed/yuENW2onMFE";
+				document.getElementById("b3").style.backgroundColor = "white";
+				document.getElementById("b1").style.backgroundColor = "white";
+				document.getElementById("b2").style.backgroundColor = "rgb(0,255,170)";
+			}
+			
+			function video3()
+			{
+				var video = document.getElementById("videos");
+				video.src = "https://www.youtube.com/embed/1OKqjSFVMMI";
+				document.getElementById("b1").style.backgroundColor = "white";
+				document.getElementById("b2").style.backgroundColor = "white";
+				document.getElementById("b3").style.backgroundColor = "rgb(0,255,170)";
+			}
+				
+					
+		</script>
+		
+	</body>
+</html>
+

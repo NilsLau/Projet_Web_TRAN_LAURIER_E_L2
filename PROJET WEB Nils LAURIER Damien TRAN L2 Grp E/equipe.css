@@ -1,0 +1,132 @@
+body
+{
+	font-family : Verdana, Arial, sans-cerif; 
+}
+
+.titre
+{
+	width : 100%;
+	display : flex;
+	justify-content : center; 
+	color : rgb(0, 255,170);
+	text-transform : uppercase;
+	font-size : 1.5em;
+	margin-bottom : 50px;
+}
+
+.team
+{
+	width : 50%;
+	display : flex; 
+	flex-direction : column;
+	color : rgb(0,255,170);
+	
+}
+
+.nils, .damian
+{
+	display : flex; 
+	justify-content : center;
+}
+
+.nils
+{
+	margin-bottom : 50px;
+}
+
+.damian
+{
+	margin-bottom : 30px;
+}
+
+.photo_nils
+{
+	height : 220px;
+	width : 220px; 
+	border-radius : 110px;
+}
+
+.photo_damian
+{
+	height : 220px;
+	width : auto;
+	border-radius : 110px;
+}
+
+.description_nils
+{
+	margin-left : 30px;
+}
+
+.description_damian
+{
+	margin-right : 30px;
+}
+
+.description_nils, .description_damian
+{
+	display : flex; 
+	flex-direction : column;
+}
+
+.prenom
+{
+	width : 100%;
+	display : flex;
+	justify-content : center;
+	font-family : Verdana, Arial, sans-cerif;
+	font-size : 1.2em;
+	margin : 0px; 
+	margin-top : 35px;
+}
+
+.presentation
+{
+	display : flex; 
+	flex-direction : column;
+	justify-content : flex-start;
+	align-items : center; 
+}
+.role 
+{
+	margin : 0px; 
+	font-size : 0.9em;
+	margin-top : 5px;
+}
+
+.texte
+{
+	font-size : 0.8em;
+	margin-top : 42px;
+}
+
+@media all and (max-width: 1024px)
+{
+	.nils, .damian
+	{
+		flex-direction : column;
+		align-items : center; 
+	}
+	.description_nils
+	{
+		margin-left : 0px;
+		margin-top : 10px
+	}
+	.description_damian
+	{
+		margin-right : 0px; 
+		margin-top : 10px; 
+	}
+	.texte
+	{
+		margin-top : 10px; 
+	}
+	.damian
+	{
+		flex-direction : column-reverse;
+	}
+	.prenom
+	{
+		margin-top : 0px; 
+	}
+}

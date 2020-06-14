@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+   	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="mathematques.css" />
+		<title>Study.fr Informatique</title>
+	</head> 
+	<body>
+	
+		<header>
+			<h1><a class = "nom" href = "projet_web.html ">Study.fr</a></h1>
+			<nav>
+				<a class = "page" href="mathematiques.html">Mathématiques</a>
+				<a class = "page" href="physique.html">Physique</a>
+				<a class = "page" href="informatique.html">Informatique</a>
+				<a class = "page" href="avis.html" id = "jouer">A vous de jouer</a>
+			</nav>
+		</header>
+		
+		<div class = "cours">
+			<p>
+				<h1 class = "matiere">Informatique</h1>
+				<h2>1. Langage algorithmique</h2>
+				L’objectif d’un langage algorithmique est de communiquer, en utilisant un
+				langage naturel mais formalisé, une logique de traitement présentée sous la forme
+				d’un schéma opératoire (des séquences d’instructions éventuellement répétées),
+				sous une forme épurée, naturelle, débarrassée des spécificités et détails
+				techniques propres à un langage de programmation.</br>
+				Néanmoins, épuré ne signifie pas hermétique : le but est de rendre
+				particulièrement claire la structure du schéma de traitement. Par ailleurs, un
+				algorithme est en général destiné à s’exécuter sur un ordinateur, il faut donc que
+				les opérations à effectuer soient non ambiguës.</br>
+				On s’attachera donc à faire preuve de rigueur et de formalisme lors de la
+				rédaction d’algorithmes.</br>
+				Un algorithme se compose des trois parties suivantes :</br>
+				● En-tête de l’algorithme</br>
+				● Spécification des données manipulées (données, variables)</br>
+				● Définition de l’algorithme</br>
+				<h3>1.1. En-tête de l’algorithme</h3>
+				La spécification d’un algorithme comprend deux parties : la déclaration et la
+				définition.</br>
+				La déclaration est constituée d’une série de lignes qui nomme l’algorithme
+				et définit les données qu’il va manipuler.</br>
+				Les données manipulées par l’algorithme sont de différentes natures. On
+				distingue les variables et les données.</br>
+				Variable: il s’agit d’une donnée qui est interne à l’algorithme et n’a d’état
+				ni avant, ni après exécution de l’algorithme (on parle alors de variables à portée
+				locale).</br>
+				Donnée: il s’agit d’une information qui est donnée lors de l’appel de
+				l’algorithme. Cette information est copiée; les modifications de cette donnée dans
+				le corps de l’algorithme n’ont donc aucun effet sur la variable originale.
+				En-tête de déclaration: définit en premier lieu le nom de l’algorithme et
+				précise le format d’appel de celui-ci. On indique notamment les noms des
+				arguments et leur type, ainsi que la nature du résultat éventuellement retourné
+				par l’algorithme.
+				<h3>1.2. Spécification des données manipulées</h3>
+				L’en-tête de déclaration donne ensuite, à raison d’un élément par
+				ligne, les données et les variables; avec à chaque fois, le nom, le type et
+				une description claire et succincte du rôle joué dans le cadre de
+				l’algorithme. Le nom doit être cohérent, pour les données, avec ceux choisis
+				pour le format d’appel de l’algorithme.
+				<h3>1.3. Types</h3>
+				Types de base: À chaque fois que l’on parlera d’une variable (déclaration
+				de donnée, déclaration de variable, ou champ de structure) on précisera son type.
+				Les types classiques sont assez libres pour la syntaxe, tant qu’ils sont cohérents :
+				entier, nombre à virgule ou flottant, mot ou chaine de caractère…</br>
+				Types avancés: Les types avancés sont les tableaux et les structures. Ils
+				ne se manipulent pas comme les autres types, et doivent donc être traités à part.
+				On ne peut pas par exemple sommer deux tableaux. Les variables de types
+				avancés représentent des ensembles qui contiennent de nombreuses valeurs.</br>
+				Référence à un type: à l’instar des types classiques, la référence est une
+				information renseignée lors de la déclaration (donnée, variable ou champ de
+				structure). On peut la considérer comme une famille de types. Néanmoins cette
+				fois, aucune copie n’est effectuée ; les modifications de cette donnée qui
+				interviennent dans le corps de l’algorithme sont directement appliquées à la
+				variable originale. Passer une donnée de type référence à un type permet donc à
+				un algorithme de modifier directement une variable provenant d’un autre
+				contexte.</br>
+				La manipulation d’un type est la même que la manipulation d’une référence
+				à ce type.
+				<h3>1.4. Définition de l’algorithme</h3>
+				La déclaration terminée, vient la définition de l’algorithme (appelé aussi
+				corps de l’algorithme). Celle-ci définit le schéma de traitement des données et des
+				variables, qui conduit à la complétion de l’algorithme, avec l’éventuelle production
+				d’un résultat. Cette définition est encadrée par les mots début (première ligne) et
+				fin (dernière ligne).
+				<h4>1.4.1. Affectation</h4>
+				Toutes les variables qui sont utilisées dans le corps de l’algorithme doivent
+				avoir été dûment définies dans l’en-tête.</br>
+				On utilisera l’opérateur ← pour affecter à une variable une valeur.</br>
+				Par défaut, une variable n’a pas de valeur définie, il faudra donc prendre à
+				garde à ne pas utiliser des variables sans valeur définie, et il conviendra de définir
+				(de préférence au début de l’algorithme) les valeurs initiales des variables lorsque
+				cela est nécessaire.
+				<h4>1.4.2. Affichage et Saisie</h4>
+				Pour afficher la valeur d’une donnée ou d’une variable, ou du texte, on
+				utilise le mot clé afficher.</br>
+				Pour afficher plusieurs choses à la suite, on utilise un +</br>
+				Pour faire saisir une valeur à l’utilisateur, on utilise le mot clé saisir.
+				<h4>1.4.3. Structures conditionnelles</h4>
+				Structure « si. . . alors. . . » : La structure « si. . . alors. . . » permet
+				d’effectuer une suite d’instructions si un prédicat donné est vrai.</br>
+				Structure « si. . . alors. . . sinon. . . » : La structure « si. . . alors. . .
+				sinon. . . » permet également d’effectuer une suite d’instructions si un prédicat
+				donné est vrai, mais si le prédicat s’avère être faux, une autre suite d’instructions
+				sera exécutée.</br>
+				Structure « si. . . alors. . . sinon si. . . alors. . . sinon. . . » : La
+				structure « si. . . alors. . . sinon si. . . alors. . . sinon. . . » permet d’effectuer une
+				suite d’actions en vérifiant tour à tour un nombre arbitraire de prédicats donnés.
+				Les prédicats sont vérifiés les uns après les autres, dès que l’un s’avère être vrai,
+				la suite d’action afférente est exécutée et on quitte la structure. Si aucun prédicat
+				ne s’avère vrai, la suite d’instructions situés après le bloc sinon est effectuée.
+				<h4>1.4.4. Structures itératives</h4>
+				Structure « tant que. . . faire. . . » : La structure « tant que. . . faire. . .
+				» permet d’exécuter plusieurs fois une suite d’instructions tant que la condition
+				donnée est vraie. Ainsi, on commence par vérifier la condition, si elle est vraie, on
+				exécute les opérations puis on vérifie une nouvelle fois la condition et ainsi de
+				suite. . .</br>
+				Structure « pour. . . faire. . . » : La structure « pour. . . faire. . . »
+				permet d’exécuter plusieurs fois une suite d’instructions en effectuant à chaque
+				fois une instruction donnée, il faut par ailleurs une condition d’arrêt pour éviter de
+				boucler indéfiniment.</br>
+				Cette structure est typiquement utilisée pour parcourir un tableau dont la
+				taille est connue.
+				<h3>1.5. Instructions, indentation et lignes</h3>
+				Ici, point besoin de marqueur de fin d’instruction tel que ;. Le retour à la
+				ligne suffit. Quant au bloc d’instructions, il démarre soit par début, soit par
+				l’en-tête d’une structure de contrôle, et se termine par fin. Tout ce qu’il contient
+				est indenté d’une tabulation supplémentaire.</br>
+				Quand un bloc ne contient qu’une instruction, il n’a pas besoin d’être. En
+				particulier, une structure de contrôle d’un bloc qui ne contient qu’une instruction
+				pourra être écrite sur une seule ligne, sous la forme en-tête puis instruction.
+				<h2>2.Tableaux </h2>
+				<h3>2.1. Tableaux 1D </h3>
+				Un tableau est un ensemble ordonné de valeurs indexées. On accède à une valeur en connaissant son indice. L’indice est un entier naturel qui fait office d’adresse. En langage algorithmique, les indices commencent à 0 et sont ordonnés croissants. </br>Au même titre que les autres types de variables, les tableaux peuvent être déclarés en tant que données, variables locales et types de retours. Néanmoins, leur description est plus complète.  
+				<h4>2.1.1. Lire la taille </h4>
+				Vous pouvez accéder à la taille d’un tableau grâce à la fonction taille(tab), et n’avez donc pas besoin de passer la taille en paramètre des fonctions. 
+				<h4>2.1.2. Redimensionner</h4>
+				Si un tableau est de taille n  , vous pouvez accéder aux indices [0; n  - 1]. Pour aller au-delà, il faut étendre le tableau en précisant la nouvelle taille. taille(tab) étant affectable, vous pouvez procéder comme ceci : 
+				<h3>2.2. Tableaux 2D</h3> 
+				On peut visualiser un tableau 2D de taille NxM comme un tableau 1D de taille N   dont chaque cellule contient elle-même un autre tableau 1D de taille M. Chaque cellule est alors accessible grâce à un couple (n, m) tel que { 0 ≤ n ≤ N-1  et  0 ≤  m ≤ M-1 } en utilisant la syntaxe tabn, m. </br>
+				Au niveau de la déclaration dans l’entête, on utilise la syntaxe suivante : </br>
+				La fonction taille(tab) retournera la taille de la dimension principale. Par exemple   : ● taille(tab2D) retourne N ● taille(tab2D[n]) retourne M </br>
+				Remarques : ● redimensionner N se fait en affectant la nouvelle taille à taille(tab2D) ● redimensionner M se fait en affectant la nouvelle taille à taille(tab2D[n]) pour n allant de 0 à N.
+				<h2>3. Structures</h2>
+				<h3>3.1. Définition du prototype / schéma </h3>
+				Rappelons qu’une structure est un type personnalisé que l’on construit par agrégation d’autres types. Il est même possible pour une structure d’être composée d’un champ auto-référentiel (qui pointe vers une autre instance de la même structure). Avant d’utiliser un type personnalisé, il est nécessaire de définir son schéma. C’est-à-dire son nom et ses champs, chacun d’eux étant  lui-même caractérisé par un nom et un type. < /br>
+				La définition d’une structure (sa description) prend lieu en dehors et avant tout             algorithme l’utilisant. 
+				 
+				<h3>3.2. Allocation statique vs. Dynamique</h3>
+				<h4>3.2.1. Quand utiliser l’allocation statique ?</h4>
+				Lors d’une allocation statique, l’instance (variable) de la structure ainsi  créée a une portée limitée, c’est-à-dire qu’elle n’existe que le temps de  l'exécution de l’algorithme. Vous pouvez les passer en paramètre d’autres  algorithmes, mais par les retourner. 
+				<h4>3.2.2. Quand utiliser l’allocation dynamique ?</h4>
+				En résumé, dès qu’on a besoin de dépasser la portée de l’algorithme, donc lorsqu’on retourne une variable de type avancé (structure ou tableau). Vous  gagnez alors le contrôle complet du cycle de vie de ces variables. </br>
+				Attention toutefois, ce gain de liberté implique que vous devez “prendre vos responsabilités” : c’est à vous d’affecter et libérer les instances que vous manipulez. Contrairement à la version statique, personne ne le fera à votre place. 
+
+				<h3>3.3. Utilisation de la structure - cas de l’allocation statique </h3>
+				Pour déclarer statiquement une variable de type avancé, il suffit de  l’ajouter dans l’entête et de l’employer de suite dans l’algorithme. 
+				<h3>3.4. Utilisation de la structure - cas de l’allocation dynamique</h3>
+				On utilise la même déclaration dans l’entête, mais par l’utilisation de   l’opérateur réserver, on marque la nature dynamique. De par la nature de cette allocation, on peut retourner un résultat créé dans un algo. Lorsque l’on n’utilise plus une variable que l’on a nous même allouée, on la libère, grâce au mot clé libérer. 
+
+			</p>
+		</div>
+		
+		<footer>	
+			<a class = "equipe" href = "equipe.html">Qui sommes-nous?</a>
+			<div class = "reseaux" />
+				<a href="https://www.facebook.com/damien.tran.98" target = "_blank"><img id = "fb" src = "facebook.png" alt = "facebook"/></a>
+				<a href="https://twitter.com/DaMiiEn_94" target = "_blank"><img id = "twitter"  src = "twitter.png" alt = "twitter"/></a>
+				<a href="https://www.instagram.com/damien_trn/?hl=fr" target = "_blank"><img id = "instagram" class = "logos" src = "instagram.png" alt = "instagram"/></a>
+			</div>
+			<small class = "credits">&copy; Copyright 2020, Damils Corporation</small>
+		</footer>
+		
+	</body>
+</html>

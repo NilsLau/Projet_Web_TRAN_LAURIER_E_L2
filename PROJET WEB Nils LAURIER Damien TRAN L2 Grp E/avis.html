@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+   	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="mathematques.css" />
+		<link rel="stylesheet" href="avis.css" />
+		<title>Study.fr A vous de jouer</title>
+	</head> 
+	<body>
+	
+		<header>
+			<h1><a class = "nom" href = "projet_web.html ">Study.fr</a></h1>
+			<nav>
+				<a class = "page" href="mathematiques.html">Mathématiques</a>
+				<a class = "page" href="physique.html">Physique</a>
+				<a class = "page" href="informatique.html">Informatique</a>
+				<a class = "page" href="avis.html">A vous de jouer</a>
+			</nav>
+		</header>
+		
+		<h2 class = "titre">Laissez-nous un avis !</h2>
+			
+		
+		<form method = "post" action = "traitement.php" class = "formulaire">
+				<div class = "nom_prenom">
+					<input type = "text" placeholder = "Prénom" class = "texte" id = "fname" required />
+					<input type = "text" placeholder = "Nom" class = "texte" id = "name" required />
+				</div>
+				<textarea type = "text" placeholder = "Avis" class = "avis"  id = "comment" required /></textarea>
+				<input type = "button" value = "Envoyer" id = "ajout" onClick = "envoyer()" />
+		</form>	
+		
+		<h2 class = "titre">Avis des utilisateurs</h2>
+		<div class = "tab">
+			<table id = "tableau">
+				<tr>
+					<td class = "identite">Nils Laurier : </td>
+					<td class = "tab_avis">Tres bon site je recommande</td>
+				</tr>
+				<tr>
+					<td class = "identite">Damien Tran : </td>
+					<td class = "tab_avis">Grace à Study.fr j'ai validé mon semestre sans problème ! </td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		
+		<footer>	
+			<a class = "equipe" href = "equipe.html">Qui sommes-nous?</a>
+			<div class = "reseaux" />
+				<a href="https://www.facebook.com/damien.tran.98" target = "_blank"><img id = "fb" src = "facebook.png" alt = "facebook"/></a>
+				<a href="https://twitter.com/DaMiiEn_94" target = "_blank"><img id = "twitter"  src = "twitter.png" alt = "twitter"/></a>
+				<a href="https://www.instagram.com/damien_trn/?hl=fr" target = "_blank"><img id = "instagram" class = "logos" src = "instagram.png" alt = "instagram"/></a>
+			</div>
+			<small class = "credits">&copy; Copyright 2020, Damils Corporation</small>
+		</footer>
+		
+		<script>
+		
+		function envoyer()
+		{
+			
+			if(document.getElementById("fname").value == "" || document.getElementById("name").value == "" || document.getElementById("comment").value == ""){
+				alert("Veuillez remplir toutes les cases pour envoyer.");
+			}
+			
+			else{
+			
+				var tab = document.getElementById("tableau");
+				var ligne = document.createElement("tr");
+				
+				var identite = document.createElement("td");
+				identite.textContent = document.getElementById("fname").value + " " + document.getElementById("name").value + " :";
+				ligne.appendChild(identite);
+						
+				var avis = document.createElement("td");
+				avis.textContent = document.getElementById("comment").value;
+				ligne.appendChild(avis);
+				
+				tab.appendChild(ligne);
+				
+				document.getElementById("fname").value = "";
+				document.getElementById("name").value = "";
+				document.getElementById("comment").value = "";
+			}
+			
+		}
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+   	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="mathematques.css" />
+		<title>Study.fr Mathématiques</title>
+	</head> 
+	<body>
+	
+		<header>
+			<h1><a class = "nom" href = "projet_web.html ">Study.fr</a></h1>
+			<nav>
+				<a class = "page" href="mathematiques.html">Mathématiques</a>
+				<a class = "page" href="physique.html">Physique</a>
+				<a class = "page" href="informatique.html">Informatique</a>
+				<a class = "page" href="avis.html">A vous de jouer</a>
+			</nav>
+		</header>
+		
+		<div class = "cours">
+			<p>
+				<h1 class = "matiere">Mathématiques</h1>
+				<h2>1. Compléments sur les limites.</h2>
+				<h3>1.1.Généralités sur le domaine d’application du cours</h3>
+				Dans l’ensemble de ce cours, nous nous plaçons dans le cadre des fonctions d’une
+				variable réelle, à valeurs réelles, définies sur des intervalles ou des unions d’intervalles.
+				Nous désignerons par ℝ̅ l’ensemble des nombres réels auquel on adjoint
+				  et -.
+				Ainsi
+				on a l’égalité : ℝ̅ = ℝ ∪ {−∞; +∞}
+				<h3>1.2.Limite d’une fonction composée</h3>
+				Définition 1. 2. 1 : Soit f une fonction définie sur un ensemble I et à valeurs dans un
+				ensemble J. Soit g une fonction définie sur l’ensemble J. On appelle fonction composée
+				𝑔𝑜𝑓 la fonction définie sur l’ensemble I telle que :
+				∀𝑥 ∈ 𝐼, 𝑔𝑜𝑓(𝑥) = 𝑔[𝑓(𝑥)].
+				On peut schématiser cette opération par le schéma suivant :
+				𝑔𝑜𝑓: 𝑥
+				𝑓
+				→ 𝑓(𝑥)
+				𝑔
+				→ 𝑔[𝑓(𝑥)]
+				</br>Théorème 1. 2. 1 : Soit a, b et  trois éléments quelconques de ℝ̅. Soit f et g deux
+				fonctions telles que f soit définie au voisinage de a et
+				f x b
+				x a
+				
+				
+				lim ( )
+				et g soit définie au
+				voisinage de b et
+				 
+				
+				lim g(x)
+				x b
+				. Alors on a
+				  
+				
+				lim g f (x)
+				x a
+				</br>Remarque : On peut schématiser ce théorème par:  
+				f g
+				a b
+				<h2>2. Négligeabilité</h2>
+				<h3>2.1.Définition ; premiers exemples</h3>
+				Définition 2. 1. 1 : Soit f et g deux fonctions définies au voisinage de ∈ ℝ̅ . On dit que f
+				est négligeable devant g en a et on note
+				f  o(g)
+				si il existe une fonction  définie au
+				voisinage de a et vérifiant
+				lim ( )  0
+				
+				x
+				x a
+				
+				telle que, au voisinage de a, f (x)  g(x) (x).
+				Par la suite, on considèrera des fonctions définies au voisinage de 𝑎 ∈ ℝ̅.
+				</br>Exemples fondamentaux :
+				</br> En l’infini, si n>p, xp=o(xn
+				)
+				</br> En 0, si n>p, xn=o(xp
+				)
+				</br> En +∞, lnx=o(xa
+				), où a désigne un réel strictement positif.
+				</br> En +∞, si a>0, x
+				a=o(ex
+				)
+				 f=o(1)
+				 lim ( )  0.
+				
+				f x
+				x a
+				<h3>2.2. Propriétés.</h3>
+				Propriété 2. 2. 1 : Si g se s’annule pas au voisinage de a, on a l’équivalence suivante :
+				0.
+				( )
+				( )
+				 ( )  lim 
+				 g x
+				f x
+				f o g
+				x a
+				</br>Propriété 2. 2. 2 : Transitivité.
+				Si en a, f=o(g) et g=o(h), alors f=o(h).
+				</br>Application : En +∞, si a>0, lnx=o(xa
+				), et x
+				a=o(ex
+				) donc lnx=o(ex
+				)
+				</br>Propriété 2. 2. 3 : Règles de calcul
+				</br> Si f=o(g) et si h=o(g), alors f+h=o(g).
+				</br> Si f=o(g) et si h=o(k), alors fh = o(gk)
+				</br> Si f=o(g) et si k est un réel, alors kf=o(g)
+				</br> Si f=o(g), alors, pour toute fonction k définie au voisinage de a,
+				fk =o(gk).
+				<h2>3. Fonctions équivalentes.</h2>
+				<h3>3.1.Définition ; premiers exemples.</h3>
+				Définition 3. 1. 1 : Soit f et g deux fonctions définies au voisinage de 𝑎 ∈ ℝ̅. On dit que f
+				est équivalente à g en a et on note
+				f g
+				a
+				
+				si en a,
+				f  g  o(g).
+				</br>Propriété 3. 1. 1 : Si
+				f g
+				a
+				
+				, alors
+				g f
+				a
+				 .
+				</br>Propriété 3. 1. 2 : Si g ≠ 0 au voisinage de a, alors
+				f g
+				a
+				
+				est équivalent à
+				1.
+				( )
+				( )
+				lim 
+				 g x
+				f x
+				x a
+				</br>Premiers exemples fondamentaux :
+				
+				n
+				n
+				n
+				n
+				n
+				n
+				a x a x a a x
+				
+				
+				    0 
+				1
+				1
+				...
+				
+				x x
+				0
+				sin 
+				
+				x x
+				0
+				tan 
+				
+				2
+				cos 1
+				2
+				0
+				x
+				x  
+				
+				x x
+				0
+				ln(1 )
+				
+				x
+				x
+				0
+				e 1
+				
+				 x) x
+				
+				0
+				 ,(1 1 
+				<h3>3.2.Propriétés.</h3>
+				<h4>3.2.1. Transitivité</h4>
+				Propriété 3. 2. 1. 1 : Si
+				f g
+				a
+				
+				et si
+				g h
+				a
+				
+				, alors
+				f h.
+				a
+				
+				<h4>3.2.2. Lien avec les limites</h4>
+				Propriété 3. 2. 2. 1 : Si
+				f g
+				a
+				
+				, alors f et g ont même comportement en a, en particulier,
+				f et g ont, si elles existent, même limite en a.
+				</br>Propriété 3. 2. 2. 2 : Si
+				lim ( )  ,
+				
+				f x
+				x a
+				ℓ ∈ ℝ∗
+				, alors
+				
+				a
+				f  .
+				</br>Propriété 3. 2. 2. 3 :
+				f 
+				a
+				0 
+				la fonction f est nulle au voisinage de a.
+				<h4>3.2.3. Opérations</h4>
+				Propriété 3. 2. 3. 1 : Si
+				f g
+				a
+				
+				et si
+				h k
+				a
+				
+				, alors
+				fh gk
+				a
+				 .
+				</br>Propriété 3. 2. 3. 2 : Si
+				f g
+				a
+				
+				alors .
+				1 1
+				f g
+				a
+				
+				</br>Propriété 3. 2. 3. 3 : Si
+				f g
+				a
+				
+				et si
+				h k
+				a
+				
+				, alors
+				k
+				g
+				h
+				f
+				a
+				 .
+				</br>Propriété 3.2. 3. 4 : Si au voisinage de , 𝑓 = 𝑜(𝑔), alors
+				f g g
+				a
+				  .
+				</br></br>Remarques très importantes :
+				</br> On ne peut ni ajouter, ni soustraire d’équivalents.
+				</br> On ne peut composer des équivalents.
+			</p>
+		</div>
+		
+		<footer>	
+			<a class = "equipe" href = "equipe.html">Qui sommes-nous?</a>
+			<div class = "reseaux" />
+				<a href="https://www.facebook.com/damien.tran.98" target = "_blank"><img id = "fb" src = "facebook.png" alt = "facebook"/></a>
+				<a href="https://twitter.com/DaMiiEn_94" target = "_blank"><img id = "twitter"  src = "twitter.png" alt = "twitter"/></a>
+				<a href="https://www.instagram.com/damien_trn/?hl=fr" target = "_blank"><img id = "instagram" class = "logos" src = "instagram.png" alt = "instagram"/></a>
+			</div>
+			<small class = "credits">&copy; Copyright 2020, Damils Corporation</small>
+		</footer>
+		
+	</body>
+</html>
